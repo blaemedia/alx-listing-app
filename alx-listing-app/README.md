@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Project Description and Goals
 
-## Getting Started
+This project is a web application built with Next.js aimed at recreating an Airbnb-style listing page. The goal is to allow users to browse, view, and interact with property listings in a modern, responsive interface. The project emphasizes performance, component reusability, and scalable folder structure — key strengths of the Next.js framework.
 
-First, run the development server:
+Project Structure Overview
+1. components/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Contains reusable UI components used across the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Examples: Navbar.tsx, ListingCard.tsx, Footer.tsx.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Purpose: Keeps the code modular, clean, and maintainable by separating UI building blocks.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. interfaces/
 
-## Learn More
+Holds TypeScript interface definitions and types for data models.
 
-To learn more about Next.js, take a look at the following resources:
+Examples: Listing.ts, User.ts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Purpose: Provides strong typing for props and data, reducing bugs and improving development consistency.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. constants/
 
-## Deploy on Vercel
+Stores static configuration values or reusable constants.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Examples: API endpoints, routes, default images, or status values.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Purpose: Centralizes key values to make updates easy and prevent repetition throughout the codebase.
+
+4. public/assets/
+
+Contains static files such as images, icons, fonts, and logos.
+
+Examples: /assets/logo.png, /assets/banner.jpg.
+
+Purpose: Files here are publicly accessible and can be referenced directly (e.g., /assets/logo.png).
